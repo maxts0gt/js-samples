@@ -21,7 +21,6 @@ Array.prototype.myFilter = function (callback) {
     if (callback(this[i], i, this) === true) {
       // if it is true, then push it to the output array
       output.push(this[i]);
-      e;
     }
   }
   // and finally return the array
