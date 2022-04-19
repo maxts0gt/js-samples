@@ -1,3 +1,4 @@
+// Map method
 Array.prototype.myMap = function (callback) {
   // create the output the array
   const output = [];
@@ -9,6 +10,8 @@ Array.prototype.myMap = function (callback) {
   // and finally return the array
   return output;
 };
+
+// Filter method
 Array.prototype.myFilter = function (callback) {
   // create the output the array
   const output = [];
@@ -18,11 +21,14 @@ Array.prototype.myFilter = function (callback) {
     if (callback(this[i], i, this) === true) {
       // if it is true, then push it to the output array
       output.push(this[i]);
+      e;
     }
   }
   // and finally return the array
   return output;
 };
+
+// Reduce method
 Array.prototype.myReduce = function (callback, initialValue) {
   // save the accumulator
   let accumulator = initialValue;
